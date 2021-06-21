@@ -57,7 +57,7 @@ nav a:hover {
   color: var(--dark);
 }
 
-section {
+.hero {
   display: flex;
   flex-flow: row wrap;
   background-color: lightblue;
@@ -66,7 +66,7 @@ section {
   justify-content: flex-end;
 }
 
-section h1 {
+.hero h1 {
   margin-right: 50px;
   margin-bottom: 35px;
   background-color: var(--light);
@@ -76,51 +76,339 @@ section h1 {
   font-weight: bold;
 }
 
-footer {
+.about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 50px 50px 0 12%;
+}
+
+.about h2 {
+  padding-right: 10px;
+  font-size: 300%;
+  color: var(--text);
+}
+
+.about p {
+  border-left: 3.5px solid var(--text);
+  padding-left: 70px;
+  padding-right: 48px;
+}
+
+.work {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 50px 50px 0 13.5%;
+}
+
+.work h2 {
+  padding-right: 10px;
+  font-size: 300%;
+  color: var(--text);
+}
+
+.work article {
+  border-left: 3.5px solid var(--text);
+  padding-left: 70px;
+  padding-right: 48px;
+}
+
+.surf-report {
+  position: relative;
+}
+.surf-report img {
+  width: 850px;
+  height: 500px;
+  border: 8px solid var(--light);
+}
+
+.surf-title {
+  position: absolute;
+  bottom: 20;
+  background-color: var(--light);
+  color: var(--dark);
+  padding: 5px 10px 5px 40px;
+}
+
+.surf-title h3 {
+  font-size: 150%;
+}
+
+.other-works {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  padding-top: 10px;
+}
+
+.led {
+  position: relative;
+  flex: 2 0 40%;
+  border: 8px solid var(--light);
+  height: 150px;
+  width: 200px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.calculator {
+  position: relative;
+  flex: 2 0 40%;
+  border: 8px solid var(--light);
+  height: 150px;
+  width: 200px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.puzzle {
+  position: relative;
+  flex: 2 0 40%;
+  border: 8px solid var(--light);
+  height: 150px;
+  width: 200px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.run {
+  position: relative;
+  flex: 2 0 40%;
+  border: 8px solid var(--light);
+  height: 150px;
+  width: 200px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.works-img {
+  height: 100%;
+  width: 100%;
+}
+
+.other-works-title {
+  position: absolute;
+  top: 75;
+  background-color: var(--light);
+  color: var(--dark);
+  padding: 5px 10px 5px 30px;
+}
+
+.other-works-title h3 {
+  font-weight: bold;
+}
+
+.other-works-title p {
+  font-size: 75%;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 50px 50px 10px 3.25%;
+}
+
+footer h2 {
+  border-right: 3.5px solid var(--text);
+  padding-right: 5px;
+  font-size: 300%;
+  color: var(--text);
 }
 
 footer a {
   text-decoration: none;
+  margin-left: 6%;
   padding: 10px;
-  margin-right: 10px;
   color: var(--dark);
   background-image: linear-gradient(280deg, var(--dark) 0%, var(--dark) 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: bottom;
-  font-size: 1.4em;
+  font-size: 1em;
   transition: all 0.25s ease-in;
 }
 
 footer a:hover {
-    background-size: 100% 100%;
-    color: var(--light);
+  background-size: 100% 100%;
+  color: var(--light);
 }
+
 @media only screen and (max-width: 768px) {
   header {
     justify-content: center;
     padding: 0 0 4% 0;
   }
+
   header h1 {
-    padding: 2% 100%;
+    padding: 2%;
+    margin: 0;
+    width: 100%;
+    text-align: center;
   }
+
   header nav {
     padding-top: 2%;
   }
+
   nav a {
     padding: 5px;
   }
-  section {
+
+  .hero {
     height: 200px;
     justify-content: center;
     padding-bottom: 20px;
   }
 
-  section h1 {
+  .hero h1 {
     margin: 0;
     font-size: 150%;
+  }
+
+  .about {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    align-items: flex-start;
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
+
+  .about h2 {
+    border-bottom: 3.5px solid var(--dark);
+    border-right: 0;
+    font-size: 300%;
+    font-weight: bolder;
+    color: var(--dark);
+    width: 105%;
+    margin: 0 0 20px 0;
+    padding: 0;
+  }
+
+  .about p {
+    border-left: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .work {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding: 20px 0 0 20px;
+  }
+
+  .work h2 {
+    padding-right: 10px;
+    font-size: 300%;
+    font-weight: bolder;
+    width: 95%;
+    color: var(--dark);
+    border-bottom: 3.5px solid var(--dark);
+    margin-bottom: 20px;
+  }
+
+  .work article {
+    border-left: 0;
+    padding-left: 3%;
+  }
+
+  .surf-report {
+    position: relative;
+    width: 100%;
+  }
+
+  .surf-report img {
+    width: 400px;
+    height: 200px;
+    border: 8px solid var(--light);
+  }
+
+  .surf-title {
+    position: absolute;
+    bottom: 20;
+    background-color: var(--light);
+    color: var(--dark);
+    padding: 5px 10px 5px 40px;
+  }
+
+  .surf-title h3 {
+    font-size: 150%;
+  }
+
+
+  .other-works {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .led {
+    position: relative;
+    flex: 1 1 auto;
+    border: 8px solid var(--light);
+    height: 150px;
+    width: 400px;
+    margin-bottom: 5px;
+    margin-right: 0px;
+  }
+  
+  .calculator {
+    position: relative;
+    flex: 1 1 auto;
+    border: 8px solid var(--light);
+    height: 150px;
+    width: 400px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+  }
+  
+  .puzzle {
+    position: relative;
+    flex: 1 1 auto;
+    border: 8px solid var(--light);
+    height: 150px;
+    width: 400px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 0px;
+  }
+  
+  .run {
+    position: relative;
+    flex: 1 1 auto;
+    border: 8px solid var(--light);
+    height: 150px;
+    width: 400px;
+    margin-top: 5px;
+    margin-left: 0px;
+  }
+
+
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+  }
+
+  footer h2 {
+    border-bottom: 3.5px solid var(--dark);
+    border-right: 0;
+    width: 95%;
+    color: var(--dark);
+    font-size: 300%;
+    font-weight: bolder;
+    padding: 10px 0 0 0;
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+
+  footer a {
+    margin-bottom: 5px;
+    margin-left: 0;
   }
 }
