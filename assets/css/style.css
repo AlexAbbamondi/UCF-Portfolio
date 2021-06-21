@@ -1,13 +1,16 @@
+/* Colors Used */
 :root {
   --dark: #31343d;
   --light: #92ccce;
   --text: #445877;
 }
 
+/* Universal Selector */
 * {
   box-sizing: border-box;
 }
 
+/* Element Selector */
 body {
   margin: 0;
   padding: 0;
@@ -16,6 +19,7 @@ body {
   line-height: 1.5;
 }
 
+/* Header and Nav */
 header {
   display: flex;
   flex-flow: row wrap;
@@ -57,10 +61,11 @@ nav a:hover {
   color: var(--dark);
 }
 
+/* Hero */
 .hero {
   display: flex;
   flex-flow: row wrap;
-  background-color: lightblue;
+  background-image: url("../images/background.jpg");
   height: 300px;
   align-items: flex-end;
   justify-content: flex-end;
@@ -76,6 +81,7 @@ nav a:hover {
   font-weight: bold;
 }
 
+/* About */
 .about {
   display: flex;
   flex-direction: row;
@@ -95,6 +101,7 @@ nav a:hover {
   padding-right: 48px;
 }
 
+/* Works */
 .work {
   display: flex;
   flex-direction: row;
@@ -135,6 +142,7 @@ nav a:hover {
   font-size: 150%;
 }
 
+/* Sub works */
 .other-works {
   display: flex;
   flex-flow: row wrap;
@@ -203,18 +211,20 @@ nav a:hover {
   font-size: 75%;
 }
 
+/* footer */
 footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 50px 50px 10px 3.25%;
+  margin: 50px 50px 30px 3.25%;
 }
 
 footer h2 {
   border-right: 3.5px solid var(--text);
-  padding-right: 5px;
+  padding-right: 10px;
   font-size: 300%;
   color: var(--text);
+  padding-left: 70px;
 }
 
 footer a {
@@ -235,7 +245,9 @@ footer a:hover {
   color: var(--light);
 }
 
-@media only screen and (max-width: 768px) {
+/* Breakpoint */
+@media only screen and (max-width: 900px) {
+  /* Header and nav */
   header {
     justify-content: center;
     padding: 0 0 4% 0;
@@ -256,6 +268,7 @@ footer a:hover {
     padding: 5px;
   }
 
+  /* Hero */
   .hero {
     height: 200px;
     justify-content: center;
@@ -267,6 +280,7 @@ footer a:hover {
     font-size: 150%;
   }
 
+  /* About */
   .about {
     display: flex;
     flex-flow: column wrap;
@@ -293,6 +307,7 @@ footer a:hover {
     padding: 0;
   }
 
+  /* work */
   .work {
     display: flex;
     flex-direction: column;
@@ -313,7 +328,7 @@ footer a:hover {
 
   .work article {
     border-left: 0;
-    padding-left: 3%;
+    padding-left: 0;
   }
 
   .surf-report {
@@ -339,7 +354,7 @@ footer a:hover {
     font-size: 150%;
   }
 
-
+  /* Other works */
   .other-works {
     flex-direction: column;
     align-items: flex-start;
@@ -354,7 +369,7 @@ footer a:hover {
     margin-bottom: 5px;
     margin-right: 0px;
   }
-  
+
   .calculator {
     position: relative;
     flex: 1 1 auto;
@@ -365,7 +380,7 @@ footer a:hover {
     margin-bottom: 5px;
     margin-left: 0px;
   }
-  
+
   .puzzle {
     position: relative;
     flex: 1 1 auto;
@@ -376,7 +391,7 @@ footer a:hover {
     margin-bottom: 5px;
     margin-right: 0px;
   }
-  
+
   .run {
     position: relative;
     flex: 1 1 auto;
@@ -387,8 +402,7 @@ footer a:hover {
     margin-left: 0px;
   }
 
-
-
+  /* Footer */
   footer {
     flex-direction: column;
     align-items: flex-start;
@@ -405,6 +419,11 @@ footer a:hover {
     padding: 10px 0 0 0;
     margin-bottom: 10px;
     margin-left: 0;
+  }
+
+  /* Remove pagebreak */
+  br {
+    display: none;
   }
 
   footer a {
