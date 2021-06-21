@@ -124,6 +124,7 @@ nav a:hover {
 .surf-report {
   position: relative;
 }
+
 .surf-report img {
   width: 850px;
   height: 500px;
@@ -429,5 +430,37 @@ footer a:hover {
   footer a {
     margin-bottom: 5px;
     margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  main {
+    width: 90%;
+  }
+
+  .about {
+    padding-left: 14px;
+    padding-right: 500px;
+  }
+
+  .surf-report img {
+    width: 1200px;
+    height: 700px;
+  }
+
+  .small-works {
+    height: 300px;
+  }
+
+  .other-works-title {
+    top: 218;
+  }
+
+  footer {
+    padding-left: 95px;
+  }
+
+  footer a {
+    margin-left: 3.5%;
   }
 }
