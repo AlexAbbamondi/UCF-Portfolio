@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Alex Abbamondi</title>
+    <title>Document</title>
   </head>
   <body>
-    <!-- Header containing Nav -->
+      <!-- Header with nav -->
     <header>
       <h1>Alex Abbamondi</h1>
       <nav>
@@ -19,19 +19,25 @@
       </nav>
     </header>
 
-    <!-- Hero section -->
+    <!-- Hero -->
     <section class="hero">
       <div>
         <h1>Typing and a Whole Lot of Coffee</h1>
       </div>
     </section>
 
-    <!-- Main Content -->
+    <!-- Main -->
     <main>
-      <!-- About Section -->
-      <section class="about">
-          <h2>About Me</h2>
-          <p class="about-info">
+    <!-- About -->
+      <section id="about" class="about">
+        <div class="about-title">
+          <h2>
+            About<br class="title-break" />
+            Me
+          </h2>
+        </div>
+        <div class="about-info">
+          <p>
             I received a bachelor’s degree from Florida Atlantic University
             majoring in psychology. I wanted to pursue a different career route
             and discovered web development. I have just completed my degree in
@@ -42,7 +48,10 @@
             stack. I have experience with HTML, CSS, JavaScript, Bootstrap,
             React, Redux, Sass, java, C#, VS Code, Visual Studio, MYSQL,
             Express, Node.js, and MongoDB. Currently I am in the process of
-            getting my second Bachelor's degree. <br /><br />
+            getting my second Bachelor's degree.
+          </p>
+          <br />
+          <p>
             I am a team player who enjoys meeting new people and forming close
             working relationships. I am extremely organized, hardworking, and
             motivated to finish the tasks at hand. I believe that my high work
@@ -52,78 +61,77 @@
             commended for my work in my current field and am sure that I can
             become a valued member of your team.
           </p>
+        </div>
       </section>
 
-      <!-- Work -->
-      <section class="work">
-        <h2>Work</h2>
-        <article>
-          <!-- Main featured project -->
+      <!-- Works -->
+      <section id="work" class="work">
+        <div class="work-title">
+          <h2>Work</h2>
+        </div>
+        <div class="works">
           <div class="surf-report">
-            <img src="./assets/images/surf-report.jpg" alt="surf report" />
-            <div class="surf-title">
+            <img src="./assets/images/surf-report.jpg" alt="" />
+            <div class="works-title">
               <h3>Surf Report</h3>
               <p>MERN Stack</p>
             </div>
           </div>
-          <!-- Four featured projects -->
-          <div class="other-works">
-            <div class="led small-works">
-              <img
-                src="./assets/images/led-wall.jpg"
-                alt=""
-                class="works-img"
-              />
-              <div class="other-works-title">
-                <h3>LED Wall</h3>
-                <p>Node/IoT</p>
-              </div>
-            </div>
-            <div class="calculator small-works">
-              <img
-                src="./assets/images/calculator.jpg"
-                alt=""
-                class="works-img"
-              />
-              <div class="other-works-title">
-                <h3>Calculator</h3>
-                <p>React/Javascript/CSS</p>
-              </div>
-            </div>
-            <div class="puzzle small-works">
-              <img src="./assets/images/puzzle.jpg" alt="" class="works-img" />
-              <div class="other-works-title">
-                <h3>Pastel Puzzles</h3>
-                <p>MERN Stack</p>
-              </div>
-            </div>
-            <div class="run small-works">
-              <img
-                src="./assets/images/run-buddy.jpg"
-                alt=""
-                class="works-img"
-              />
-              <div class="other-works-title">
-                <h3>Run Buddy</h3>
-                <p>HTML/CSS</p>
-              </div>
+
+          <div class="led work-img">
+            <img src="./assets/images/led-wall.jpg" alt="" />
+            <div class="works-title">
+              <h3>LED Wall</h3>
+              <p>Node/IoT</p>
             </div>
           </div>
-        </article>
-      </section>
-    </main>
 
-    <!-- Footer -->
-    <footer>
-      <h2>
-        Contact<br />
-        Me
-      </h2>
-      <a href="#">609.703.6897</a>
-      <a href="#">alex.abbamondi@gmail.com</a>
-      <a href="#">GitHub</a>
-      <a href="#">Twitter</a>
-      <a href="#">LinkedIn</a>
-    </footer>
+          <div class="calculator work-img">
+            <img src="./assets/images/calculator.jpg" alt="" />
+            <div class="works-title">
+              <h3>Calculator</h3>
+              <p>React/Javascript/CSS</p>
+            </div>
+          </div>
+
+          <div class="puzzle work-img">
+            <img src="./assets/images/puzzle.jpg" alt="" />
+            <div class="works-title">
+              <h3>Pastel Puzzles</h3>
+              <p>MERN Stack</p>
+            </div>
+          </div>
+
+          <div class="run work-img">
+            <img src="./assets/images/run-buddy.jpg" alt="" />
+            <div class="works-title">
+              <h3>Run Buddy</h3>
+              <p>HTML/CSS</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div id="contact" class="footer-title">
+          <h2>
+            Contact<br class="title-break" />
+            Me
+          </h2>
+        </div>
+        <div class="footer-nav">
+          <div class="links">
+            <a href="tel:+16097036897">609.703.6897</a>
+            <a href="mailto:alex.abbamondi@gmail.com"
+              >alex.abbamondi@gmail.com</a
+            >
+            <a href="https://github.com/AlexAbbamondi">GitHub</a>
+            <a href="www.alexabba.com">Check Out More</a>
+            <a href="https://www.linkedin.com/in/alexabbamondi/">LinkedIn</a>
+          </div>
+        </div>
+      </footer>
+    </main>
   </body>
 </html>
