@@ -148,22 +148,10 @@ main {
   margin-bottom: 40px;
 }
 
-.featured {
-  position: relative;
-  border: 8px solid var(--light);
-  height: 400px;
-  margin-bottom: 10px;
-}
-
-.featured img {
-  width: 100%;
-  height: 100%;
-}
-
 .work-img {
   position: relative;
   border: 8px solid var(--light);
-  height: 200px;
+  height: 275px;
   width: 425px;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -180,14 +168,101 @@ main {
   background-color: var(--light);
   color: var(--dark);
   padding: 5px 10px 5px 20px;
+  text-decoration: none !important;
 }
 
 .works-title h3 {
   font-weight: bold;
+  color: var(--dark);
 }
 
 .works-title p {
   font-size: 75%;
+  color: var(--dark);
+}
+
+button {
+  margin-top: 5px;
+  background-color: var(--dark);
+  border-radius: 5px;
+  border: solid var(--dark);
+}
+
+button:hover {
+  background-color: #ffffff;
+}
+
+button a {
+  text-decoration: none !important;
+  color: var(--light);
+}
+
+button a:hover {
+  color: var(--dark);
+}
+
+/* Resume */
+.resume {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.resume-title {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+.resume-title h2 {
+  float: right;
+  font-size: 300%;
+  padding-right: 10px;
+  color: var(--text);
+}
+
+.resume-info {
+  flex: 0 0 auto;
+  width: 75%;
+  border-left: 5px solid var(--text);
+  padding-left: 20px;
+  color: var(--dark);
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-indent: 50px;
+}
+
+.resume-info h2 {
+  font-weight: bolder;
+  font-size: 2rem;
+  text-align: center;
+}
+
+hr {
+  margin: 10px auto;
+}
+
+.resume-title-info {
+  text-align: center;
+}
+
+.resume-info h3 {
+  font-weight: bolder;
+  font-size: 1.50rem;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.italic-text {
+  font-style: italic;
+}
+
+.text-indent {
+  display: inline-block;
+  margin-left: 3em;
 }
 
 /* Footer */
@@ -330,27 +405,43 @@ footer {
     padding-left: 0;
   }
 
-  .featured {
-    flex: 2 0 100%;
-    margin-bottom: 10px;
-    height: 215px;
-  }
-
-  .featured img {
-    height: 200px;
-  }
-
   .work-img {
     margin-bottom: 10px;
     margin-top: 10px;
-    height: 215px;
+    height: 265px;
     width: 100%;
   }
 
   .work-img img {
-    height: 200px;
+    height: 250px;
   }
 
+  /* Resume */
+  .resume {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0 0 0 20px;
+  }
+
+  .resume-title {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .resume-title h2 {
+    float: none;
+    font-size: 300%;
+    padding-right: 0;
+    border-bottom: 5px solid var(--text);
+    margin-bottom: 15px;
+  }
+
+  .resume-info {
+    flex: 0 0 auto;
+    width: 100%;
+    border-left: 0;
+    padding-left: 0;
+  }
   /* Footer */
   footer {
     flex-direction: column;
